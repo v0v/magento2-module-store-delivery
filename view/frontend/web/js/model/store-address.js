@@ -23,9 +23,9 @@ define([], function() {
         return {
             extension_attributes : {retailer_id: retailerId},
             countryId: addressData.country_id,
-            regionId: (addressData.region && addressData.region.region_id) ? addressData.region.region_id : null,
-            regionCode: (addressData.region) ? addressData.region.region_code : null,
-            region: (addressData.region) ? addressData.region.region : null,
+            regionId: (addressData.region && addressData.region_id) ? addressData.region_id : null,
+            regionCode: (addressData.region) ? addressData.region_code : null,
+            region: (addressData.region) ? addressData.region : null,
             customerId: addressData.customer_id,
             street: Array.isArray(addressData.street) ? addressData.street : [addressData.street],
             company: addressData.name ? addressData.name : (addressData.company ? addressData.company : ''),
